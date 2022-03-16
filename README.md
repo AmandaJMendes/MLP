@@ -38,10 +38,11 @@ Note: the weights of a layer(31) 3047-3612 l refer to the connections between la
  **n** = number of neurons in layer l / **m** = number of neurons in layer l+1 / **k** = batch size
  
 1.1. Chain rule (readme0.jpg).
+
 1.2. Calculate deltas for every layer l(D<sub>l</sub> = D<sub>kxn</sub>).
 
-*Last layer (readme1.jpg).
-*Hidden layers (readme2.png).
+* Last layer (readme1.jpg).
+* Hidden layers (readme2.png).
 
 2. Compute the average of the k gradients for each weight.
 3. Use the gradients in the optimizer function.
