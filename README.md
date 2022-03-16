@@ -9,7 +9,8 @@
 
 1. Propagate batch of samples and store outputs of each layer before (**Z<sub>l</sub>**) and after (**Y<sub>l</sub>**) activation function. 
 2. How?
-  **n** = number of neurons in layer l / **m** = number of neurons in layer l+1 / **k** = batch size
+ 
+ **n** = number of neurons in layer l / **m** = number of neurons in layer l+1 / **k** = batch size
   
 First layer:
 * Weights (initial) --> W<sub>0</sub> = I<sub>n</sub> (Identity matrix)
