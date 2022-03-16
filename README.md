@@ -43,6 +43,7 @@ Note: the weights of a layer(31) 3047-3612 l refer to the connections between la
 1.2. Calculate deltas for every layer l(D<sub>l</sub> = D<sub>kxn</sub>)
 Last layer:
 ![This is an image](https://github.com/AmandaJMendes/MLP/blob/main/tempFileForShare_20220316-145401.jpg)
+
 Hidden layers:
 ![This is an image](https://github.com/AmandaJMendes/MLP/blob/main/gh.png)
 
