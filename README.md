@@ -26,7 +26,7 @@ For every other layer:
 * Activations --> Y<sub>l</sub> = ActivationFunction(Z<sub>l</sub>)
 * Weights --> W<sub>l</sub> = W<sub>nxm</sub> 
 
-Note: the weights of a layer l refer to the connections between layer l and layer l+1, therefore, the output layer doesn't have a weight's matrix.
+Note: the weights of a layer l refer to the connections between layer l and layer l+1, therefore, the output layer doesn't have a weight matrix.
 
 ###### 3. Backpropagation
 
