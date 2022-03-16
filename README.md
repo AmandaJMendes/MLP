@@ -35,8 +35,7 @@ Note: the weights of a layer l refer to the connections between layer l and laye
 * Gradient ij = partial derivative of cost function (E) w.r.t. w<sub>ij</sub>
 * How?
 
-  **i** = neuron in layer l / **j** = neuron in layer l+1
-  **n** = number of neurons in layer l / **m** = number of neurons in layer l+1 / **k** = batch size
+  **i** = neuron in layer l / **j** = neuron in layer l+1 / **n** = number of neurons in layer l / **m** = number of neurons in layer l+1 / **k** = batch size
  
   1.1. Chain rule (readme0.jpg).
 
