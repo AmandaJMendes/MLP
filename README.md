@@ -33,8 +33,8 @@ Note: the weights of a layer l refer to the connections between layer l and laye
 1. Calculate the gradients for every weight and every sample.
 * For a weight w<sub>ij</sub>, the gradient matrix G<sub>ij</sub> has **k** (batch size) elements.
 * Gradient ij = partial derivative of cost function (E) w.r.t. w<sub>ij</sub>
-4. How?
- 1. 
+2. How?
+ 2.1. 
 Last layer:
 
 
