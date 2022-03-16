@@ -33,14 +33,21 @@ Note: the weights of a layer(31) 3047-3612 l refer to the connections between la
 1. Calculate the gradients for every weight and every sample.
 * For a weight w<sub>ij</sub>, the gradient matrix G<sub>ij</sub> has **k** (batch size) elements.
 * Gradient ij = partial derivative of cost function (E) w.r.t. w<sub>ij</sub>
-* How?(31) 3047-3612
+* How?
 **i** = neuron in layer l / **j** = neuron in layer l+1
  **n** = number of neurons in layer l / **m** = number of neurons in layer l+1 / **k** = batch size
  
 1.1. Chain rule:
-![This is an image](https://lh3.googleusercontent.com/9_HpCwDk5eY1kxPhVoCCf3lu4-Fargr3VADuV5l0awMi8N1BSXlI106xbidvK_p-oAtBYYLIavPm7CTSs-Qz_sHS2X2BBcCNoOyU-BbxKeqbh_VkhTw59tNWpOJtm0Hr1roU3o9EI8mMYDLMTeMvtOntDChNXJCBGgDhWfRr5F_GsLECfnT-7M5W9F3epCKggVkCD3xLbZ46uk2eTDBIv-KziuWoAdzYzgtSP1SPmuqktBHxoQ3tcZr4EXLt70QCr8uX_jXr7LWCQ8N7NX_ZcrFxQxNYiS1dA9SFKJRnAxojddea8yVdntu4iBoA0KGvK9FTF-3V72VSI5bf_JT9SlfAU2IW9VRqpDhyp921Fx706ATPP9xo2UwK9qC5jYIVacopNB-4rGzy-55FI0Q41xm9iRBJTZPeEQvpZlk1hxlD9UKTM-ZPLnWe94nW-CbdDhcY9V2GOVvmgRud3w4zwt55jlqsHV84and6zJYO7oj3rp5Jaj-WxZKVcoCEnan6ekDtJRUkFblTBqpk0h3jekTQTWQd7ffFRldK4KgtDcVKZxyms73IXaCMZezYBaS0w0LENW9xIn-nW4Q38gusIYVYBv2SkAaDyX9FO_cbmHptu7yUj6mG_tlj7hOQLa33Vglf4GkDNyQZBM-xnUIeR1FYX4cqVmxeB2DY4k6EF6In9tME_h5lxDB3xEgPl6rNxElIdRA3W3Uox0AfIQh1ivt9gQ=w655-h591-no?authuser=0)
+![This is an image](https://github.com/AmandaJMendes/MLP/blob/main/tempFileForShare_20220316-144807.jpg)
+
 1.2. Calculate deltas for every layer l(D<sub>l</sub> = D<sub>kxn</sub>)
 Last layer:
+![This is an image](https://github.com/AmandaJMendes/MLP/blob/main/tempFileForShare_20220316-145401.jpg)
+Hidden layers:
+![This is an image](https://github.com/AmandaJMendes/MLP/blob/main/gh.png)
+
+2. Compute the average of the k gradients for each weight.
+3. Use the gradients in the optimizer function.
 
 
 
