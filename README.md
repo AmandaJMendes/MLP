@@ -9,8 +9,8 @@
 
 1. Propagate batch of samples and store outputs of each layer before (**Z<sub>l</sub>**) and after (**Y<sub>l</sub>**) activation function. 
 2. How?
- 
- **n** = number of neurons in layer l / **m** = number of neurons in layer l+1 / **k** = batch size
+
+**n** = number of neurons in layer l / **m** = number of neurons in layer l+1 / **k** = batch size
   
 First layer:
 * Weights (initial) --> W<sub>0</sub> = I<sub>n</sub> (Identity matrix)
@@ -34,8 +34,9 @@ Note: the weights of a layer(31) 3047-3612 l refer to the connections between la
 * For a weight w<sub>ij</sub>, the gradient matrix G<sub>ij</sub> has **k** (batch size) elements.
 * Gradient ij = partial derivative of cost function (E) w.r.t. w<sub>ij</sub>
 * How?
-**i** = neuron in layer l / **j** = neuron in layer l+1
- **n** = number of neurons in layer l / **m** = number of neurons in layer l+1 / **k** = batch size
+
+  **i** = neuron in layer l / **j** = neuron in layer l+1
+  **n** = number of neurons in layer l / **m** = number of neurons in layer l+1 / **k** = batch size
  
   1.1. Chain rule (readme0.jpg).
 
