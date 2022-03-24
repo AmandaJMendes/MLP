@@ -1,6 +1,6 @@
 # MLP
 
-#### Codes
+### Codes
 * mlp.py --> Main code
 * metrics.py --> Implementation of some metrics for classification and regression problems
 * optimizers.py --> Implementation of SGD function
