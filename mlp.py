@@ -357,8 +357,8 @@ class MLP:
             l = self.layers[i]
             n = l.acts.shape[0]
             gradients = []
-            for s in range(n): #For every sample, the gradients 
-                               #for all the weights in this layer with the next one
+            for s in range(n): #For every sample, compute the gradients 
+                               #for all the weights between this layer and the next one
                 gradients.append(self.layers[i].acts[s].reshape(-1,1) * self.layers[i+1].deltas[s])
                 
             #The weights and bias are updated considering the average of the gradients for all the samples
