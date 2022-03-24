@@ -22,14 +22,14 @@ class SGD:
         
     def delta_ws(self, gradients):
         """
-        This function returns the change required for every weight given the
-        gradient of each weight w.r.t. the loss and a learning rate.
+        This function returns the change required for every weight given a learning 
+        rate and the gradient of each weight w.r.t. the loss.
         """
         return self.lr * gradients
     
     def delta_bs(self, deltas):
         """
-        This function returns the change required for every bias given the
-        gradient of each weight w.r.t. the loss and a learning rate.
+        This function returns the change required for every bias given a learning 
+        rate and the gradient of each bias w.r.t. the loss.
         """
         return self.lr * deltas
