@@ -15,13 +15,13 @@
 First layer:
 * Weights (initial) --> W<sub>0</sub> = I<sub>n</sub> (Identity matrix)
 * Inputs --> X<sub>l</sub> = X<sub>kxn</sub>
-* Biases --> B<sub>l</sub> = 0<sub>1xn</sub>
+* Bias --> B<sub>l</sub> = 0<sub>1xn</sub>
 * Outputs/Activations --> Z<sub>l</sub> = Y<sub>l</sub> = Dot product(X<sub>l</sub>, W<sub>0</sub>) + B<sub>l</sub>
 * Weights --> W<sub>l</sub> = W<sub>nxm</sub>
 
 For every other layer:
 * Inputs --> X<sub>l</sub> = Y<sub>l-1</sub> 
-* Biases --> B<sub>l</sub> = B<sub>1xn</sub> 
+* Bias --> B<sub>l</sub> = B<sub>1xn</sub> 
 * Output --> Z<sub>l</sub> = Dot product(X<sub>l</sub>, W<sub>l-1</sub>) + B<sub>l</sub>
 * Activations --> Y<sub>l</sub> = ActivationFunction(Z<sub>l</sub>)
 * Weights --> W<sub>l</sub> = W<sub>nxm</sub> 
