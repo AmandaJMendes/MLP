@@ -12,6 +12,7 @@
 * derivativesMetrics.pdf --> Derivatives deduction for the metrics functions
 * readme0.jpg; readme1.jpg; readme2.png --> Mentioned throughout backpropagation section of the README file 
 
+### Implementation
 ###### 1. Initialize MLP
 
 1. Set initial weights and bias for each layer.
