@@ -2,7 +2,7 @@
 
 ###### 1. Initialize MLP
 
-1. Set initial weights and biases for each layer.
+1. Set initial weights and bias for each layer.
 2. A layer **l** with **n** neurons followed by a layer **l+1** with **m** neurons has a weight matrix **W<sub>l</sub>** of shape **nxm** and a bias matrix **B<sub>l</sub>** of shape **1xn**.
 
 ###### 2. Forward propagation
@@ -44,7 +44,7 @@ Note: the weights of a layer l refer to the connections between layer l and laye
   * Last layer (readme1.jpg).
   * Hidden layers (readme2.png).
   
-  1.3. Calculate the gradients for every weight using the chain rule mentioned in 1.1. For the biases, the gradients are the deltas themselves. 
+  1.3. Calculate the gradients for every weight using the chain rule mentioned in 1.1. For the bias, the gradients are the deltas themselves. 
 
 2. Compute the average of the k gradients for each weight and bias.
 3. Use the gradients in the optimizer function.
