@@ -43,8 +43,10 @@ Note: the weights of a layer l refer to the connections between layer l and laye
 
   * Last layer (readme1.jpg).
   * Hidden layers (readme2.png).
+  
+  1.3. Calculate the gradients for every weight using the chain rule mentioned in 1.1. For the biases, the gradients are the deltas themselves. 
 
-2. Compute the average of the k gradients for each weight.
+2. Compute the average of the k gradients for each weight and bias.
 3. Use the gradients in the optimizer function.
 
 
