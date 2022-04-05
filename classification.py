@@ -13,7 +13,8 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import OneHotEncoder
 
 from mlp import *
-from metrics import CrossEntropy, accuracy
+from metrics import accuracy
+from lossFunctions import CrossEntropy
 from optimizers import SGD
 
 
