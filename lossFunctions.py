@@ -9,11 +9,12 @@ Created on Tue Mar  8 11:33:30 2022
 import numpy as np
 
 """
-Ideas for other metrics:
+Ideas for other loss functions:
     -Binary Cross-Entropy
     -RMSE
+
+For more on the derivatives of the loss functions, check derivativesLoss.pdf
 """
-#For more on the derivatives of the metrics, check derivativeMetrics.pdf
 
 class CrossEntropy:
     """
@@ -59,14 +60,4 @@ class MSE:
         estimated outputs.
         """
         return 2*(estimated - actual)
-    
-
-def accuracy(actual, estimated):
-    """
-    This function returns the accuracy given the actual and the estimated outputs.
-    """
-    eq = np.equal(np.argmax(actual, axis=1),
-                  np.argmax(estimated, axis=1))
-    
-    return np.count_nonzero(eq)/len(actual)
     
