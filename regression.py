@@ -10,7 +10,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import MinMaxScaler
 
 from mlp import *
-from metrics import MSE
+from lossFunctions import MSE
 from optimizers import SGD
 
 i = Input(13)
